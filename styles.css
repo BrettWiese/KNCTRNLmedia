@@ -1,0 +1,14 @@
+html{
+	margin:auto;
+}
+
+#logo-words{
+	width: 100%;
+	padding:50px;
+}
+
+#logo-eyes {
+	width: 100%;
+	margin:auto;
+	display: block;
+}
