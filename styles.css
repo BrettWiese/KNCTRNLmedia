@@ -1,14 +1,92 @@
 html{
 	margin:auto;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+/*.background-image2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-position: center top;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(images/backgroundtrans.png);
+  height:100%;
+  overflow-y: visible;
+}
+*/
+
+.background-image {
+	width: 100%;
+	position: fixed;
+	margin: auto;
+	z-index: -1;
+}
+
+.background-gradient {
+	width:100%;
+	position: static;
+	z-index: 2;
+	opacity:1;
 }
 
 #logo-words{
-	width: 100%;
-	padding:50px;
+	width: 50%;
+	padding-top:50px;
+	margin: auto;
+	z-index: -2;
 }
 
 #logo-eyes {
+	z-index: -2;
+	position:relative;
 	width: 100%;
-	margin:auto;
-	display: block;
+	height: 100%;
+	margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+	left: 0;
+	right: 0;
+}
+.content {
+	width: 100%;
+	height: 900px;
+	z-index: 2;
+	position: relative;
+	-moz-box-shadow: 0px 0px 10px white
+	-webkit-box-shadow: 0px 0px 10px white;
+	box-shadow: 0px 0px 10px white;
+	background-color:white;
+
+}
+
+.spacer {
+	height: 600px;
+	width: 100%;
+}
+
+.white-back {
+	background-color: rgba(255,255,255,1) ;
+	position: relative;
+	z-index: 5;
+	width:100%;
+}
+
+.block-image {
+	max-width:100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+.row {
+	padding:;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
